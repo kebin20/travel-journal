@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: grid;
+    width: 90%;
+    max-width: 750px;
+    grid-template-rows: 0.5em 75px 125px;
+    grid-template-columns: 160px 1em 200px 200px;
+    grid-template-areas:
+        "image . location location"
+        "image . titledate titledate"
+        "image . description description";
+}
+
+.card-img{
+    grid-area: image;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.location {
+    grid-area: location;
+    margin-top: 0.5em;
+}
+
+.titledate {
+    grid-area: titledate;
+}
+
+.description {
+    grid-area: description;
+}
