@@ -6,14 +6,14 @@ export default function Card(props) {
     <div className="card">
         <img className="card-img"src={props.imageUrl} alt="" />
         <div className="location">
-            <i className="fa-solid fa-location-dot"></i><span>{props.location}</span><a href={props.googleMapsUrl}>View on Google Maps</a>
+            <i className="fa-solid fa-location-dot"></i><span className="prefecture-name">{props.location}</span><a className="location-url"href={props.googleMapsUrl}>View on Google Maps</a>
         </div>
-        <div className="titledate">
+        <div className="title">
             <h1>{props.title}</h1>
         </div>
         <div className="description">
-            <p >{props.startDate}-{props.endDate}</p>
-            <p >{props.description}</p>
+            <p className="date">{props.startDate} - {props.endDate}</p>
+            <p>{props.description}</p>
         </div>
     </div>
     )
