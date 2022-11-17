@@ -4,4 +4,4 @@ A simple travel journal logging all of my personal travel data which displays th
 
 WIP:
 
-- Create a layout for mobile displays
+- Create a layout for mobile displays (COMPLETED)
